@@ -6,7 +6,10 @@ This backend is a RESTful service written in Java using the framework [Jersey](h
 
 # Installation
 
+Before installing the REST service, the DB has to be setup. A MySQL DB is used. The procedure for setting it up is as follows (assuming you are on a Linux server):
 
+1. Install a MySQL or a MariaDB DBMS. Instructions for how to do this can be found elsewhere.
+2. Create a DB called (e.g.) "exm" and a user called "eark". You can choose different names by changing these values in the pom.xml.
 
 # Documentation for the frontend developers
 
