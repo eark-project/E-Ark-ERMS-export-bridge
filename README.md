@@ -6,10 +6,20 @@ This backend is a RESTful service written in Java using the framework [Jersey](h
 
 # Installation
 
+This section describes how to install the backend of the EEM.
+
+## Setting up the database
+
 Before installing the REST service, the DB has to be setup. A MySQL DB is used. The procedure for setting it up is as follows (assuming you are on a Linux server):
 
 1. Install a MySQL or a MariaDB DBMS. Instructions for how to do this can be found elsewhere.
-2. Create a DB called (e.g.) "exm" and a user called "eark". You can choose different names by changing these values in the pom.xml.
+2. Create a DB called (e.g.) "exm" and a user called "eark". You can choose different names by changing these values in the pom.xml. Grant all privileges to the eark user on the exm database.
+3. Log in to the DBMS and choose the exm database.
+4. Create the tables needed by the EEM by running this script: [setup_db.sql](https://github.com/magenta-aps/E-Ark-ERMS-export-bridge/blob/master/db/setup_db.sql) (this can be done with the following command from the MySQL shell: `mysql> source path/to/setup_db.sql;`)
+
+## Setting backend for development purposes
+
+... more to come.
 
 # Documentation for the frontend developers
 
