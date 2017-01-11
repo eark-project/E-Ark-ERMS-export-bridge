@@ -1,5 +1,17 @@
 # Backend for the Alfresco Export Module
 
+This repository contains the code for the backend of the ERMS Export Module (EEM). A more elaborate description of the EEM can be found on the GitHub repository hosting the code for the [frontend](https://github.com/magenta-aps/erms-export-ui-module).
+
+This backend is a RESTful service written in Java using the framework [Jersey](https://jersey.java.net/).
+
+# Installation
+
+
+
+# Documentation for the frontend developers
+
+This section describes the extraction resources that can be called from the frontend.
+
 ## Extracting Resources
 
 In order use the extraction service, use the following resources:
