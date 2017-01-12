@@ -1,4 +1,4 @@
-# Backend for the Alfresco Export Module
+# Backend for the ERMS Export Module
 
 This repository contains the code for the backend of the ERMS Export Module (EEM). A more elaborate description of the EEM can be found on the GitHub repository hosting the code for the [frontend](https://github.com/magenta-aps/erms-export-ui-module).
 
