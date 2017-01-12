@@ -41,7 +41,8 @@ To install the backend for production purposes, a [Tomcat](http://tomcat.apache.
 $ mvn clean package
 ```
 
-The resulting war file can be found in the `target/` folder. To deploy this war file on the Tomcat server, you will...
+The resulting war file can be found in the `target/` folder. To deploy this war file on the Tomcat server, copy the file to the `webapps` folder in the Tomcat container and then restart Tomcat. It is necessary to align the URL settings in the web.xml file 
+to match the URLs that are called from the frontent (see the section about documentation for frontend developers below).
 
 # Documentation for the frontend developers
 
