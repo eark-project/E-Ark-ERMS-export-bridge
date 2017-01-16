@@ -131,3 +131,7 @@ The following key/value pairs are needed:
 
 * key = `eadFile`, value = `name-of-ead-template-file`
 * key = `file`, value = `stream-containing-the-file-content`
+
+# Contact
+
+In case of problems please contact [Magenta Aps](http://www.magenta.dk)
