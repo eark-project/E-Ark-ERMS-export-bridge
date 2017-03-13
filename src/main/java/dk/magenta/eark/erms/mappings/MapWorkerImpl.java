@@ -54,7 +54,7 @@ public class MapWorkerImpl implements MapWorker {
 				// Move the uploaded mapping XML file from the temp dir to the final destination
 		
 				Path source = mapFile.toPath();
-				Path target = Paths.get(mapRoot, fileMetadata.getFileName());
+				Path target = Paths.get(mapRoot, source.getFileName().toString());
 				Files.move(source, target);
 				
 				// After moving let's store details that allow us to retrieve it

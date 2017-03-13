@@ -17,6 +17,9 @@
 		<viewType>F:eark:subseries</viewType>
 		<viewType>F:eark:record</viewType>
 		<viewType>cmis:document</viewType>
+		<viewType>cmis:folder</viewType>
+		<viewType>F:st:sites</viewType>
+		<viewType>F:st:site</viewType>
 	</viewTypes>
 
 	<eadTemplates>
