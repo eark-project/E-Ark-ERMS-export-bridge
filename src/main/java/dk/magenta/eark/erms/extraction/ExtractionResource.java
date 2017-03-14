@@ -11,6 +11,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import javax.inject.Singleton;
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
@@ -40,6 +41,7 @@ import dk.magenta.eark.erms.xml.XmlHandler;
 import dk.magenta.eark.erms.xml.XmlHandlerImpl;
 
 @Path("extraction")
+@Singleton
 public class ExtractionResource {
 
 	private final Logger logger = LoggerFactory.getLogger(RepositoryResource.class);

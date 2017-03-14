@@ -198,6 +198,7 @@ public class ExtractionWorker implements Runnable {
 		}
 		
 		builder.add(Constants.SUCCESS, true);
+		builder.add("path", exportPath.toString());
 		builder.add(Constants.STATUS, ExtractionResource.DONE);
 		response = builder.build();
 		return;
