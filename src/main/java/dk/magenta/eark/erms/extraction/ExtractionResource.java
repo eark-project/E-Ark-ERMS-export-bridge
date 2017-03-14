@@ -62,6 +62,13 @@ public class ExtractionResource {
 	@Path("extract")
 	public JsonObject extract(JsonObject json) {
 
+		// Hack - to make sure that the EAD template upload processes has finished
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		JsonObjectBuilder builder = Json.createObjectBuilder();
 
 		// TODO: the JsonUtils methods below should not take a builder as an
@@ -185,8 +192,6 @@ public class ExtractionResource {
                 IOUtils.closeQuietly(fileInputStream);
                 eadTemplate = tempFile.getAbsolutePath();
                 
-                System.out.print("\n The number of bytes read - "+ rd +" to "+tempFile.getAbsolutePath()+"\n");
-
                 // Validate the uploaded mapping XML file
                 InputStream xmlInputStream = new FileInputStream(tempFile);
                 XmlHandler xmlHandler = new XmlHandlerImpl();
