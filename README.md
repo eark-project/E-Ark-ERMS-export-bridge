@@ -1,3 +1,5 @@
+Please note that this library is obsolete and is kept here for historic reasons only! 
+
 # Backend for the ERMS Export Module
 
 This repository contains the code for the backend of the ERMS Export Module (EEM). A more elaborate description of the EEM can be found on the GitHub repository hosting the code for the [frontend](https://github.com/magenta-aps/erms-export-ui-module/tree/master).
